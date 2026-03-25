@@ -1,0 +1,21 @@
+[dependency-groups]
+dev = [
+    "sphinx>=9.0.4",
+    "sphinx-autodoc-typehints>=3.6.1",
+    "sphinx-rtd-theme>=3.1.0",
+]
+[project]
+name = "ml-factory-project"
+version = "0.1.0"
+description = "Zero-Downtime ML API project"
+authors = [{name="Ton Nom", email="ton.email@example.com"}]
+dependencies = [
+    "sphinx>=9.0.4",
+    "sphinx-autodoc-typehints>=3.6.1",
+    "sphinx-rtd-theme>=3.1.0",
+]
+
+[tool.uv.workspace]
+members = [
+    "docs",
+]
